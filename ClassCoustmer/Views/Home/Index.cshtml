@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+<link rel="shortcut icon" href="~/images/logo.ico" type="image/x-icon" />
+<style>
+    *::selection {
+        background: none;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+
+    #dox {
+        position: relative;
+        /* left: auto; */
+        margin: 30px auto;
+        /* background-color:rgb(116, 66, 50); */
+        bottom: 30px;
+        z-index: -1000;
+    }
+
+    .ul-list {
+        position: absolute;
+        width: 100px;
+        /* opacity: 0; */
+    }
+
+    .ul-list li img {
+        width: 1353px;
+        position: absolute;
+        /* left:21px; */
+        height: 607px;
+    }
+
+
+    .but {
+        border: 5px solid #204b27;
+        width: 90px;
+        border-radius: 6% 80%;
+        transform: rotate(45deg);
+        text-align: center;
+        line-height: 50px;
+        opacity: 0;
+        position: absolute;
+        top: 300px;
+        font-weight: bold;
+        font-size: 30px;
+        color: #44348b;
+        cursor: pointer;
+    }
+
+        .but:nth-last-child(1) {
+            right: 0;
+        }
+
+        .but:hover {
+            background: #cf3d11;
+            color: rgb(18, 23, 39);
+        }
+</style>
+
+<div id="dox">
+    <ul class="ul-list">
+        <li><img src="~/images/04.jpg" alt=""> </li>
+
+        <li><img src="~/images/07.jpg" alt=""></li>
+        <li><img src="~/images/08.jpg" alt=""></li>
+
+        <li><img src="~/images/11.jpg" alt=""></li>
+
+        <li><img src="~/images/19.jpg" alt=""></li>
+        <li class="but" id="prev"></li>
+        <li class="but" id="next"></li>
+
+    </ul>
+
+    <div> <video src="./music/RoiMarch - Sanlalala (Remix).mp3" autoplay></video> </div>
+</div>
+<div class="jumbotron" style="opacity:0.5;position:absolute;top:37px;">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+
+</div>
+
+<hr />
+<div style="position:absolute;top:1000px;"> <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p></div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+<script src="~/Scripts/demo.js"></script>
